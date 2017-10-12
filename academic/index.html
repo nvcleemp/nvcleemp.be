@@ -1,0 +1,362 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="a free and open source software package, implemented in C and Java, for displaying chemical and abstract graphs.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Nico Van Cleemput</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <!--<meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">-->
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <!--<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CaGe - the Chemical & abstract Graph Environment">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">-->
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <!--<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">-->
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-indigo.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+.card-software.mdl-card {
+  width: 256px;
+  height: 256px;
+}
+.card-software > .mdl-card__actions {
+  height: 52px;
+  /*padding: 16px;*/
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+.card-software__name,
+.card-software > .mdl-card__title,
+.card-software > .mdl-card__actions,
+.card-software > .mdl-card__actions > .mdl-button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+</style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Nico Van Cleemput</h3>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#contact"  class="mdl-layout__tab is-active">Contact</a>
+          <a href="#cv"       class="mdl-layout__tab">CV</a>
+          <a href="#pub"      class="mdl-layout__tab">Publications</a>
+          <a href="#conf"     class="mdl-layout__tab">Conferences</a>
+          <a href="#software" class="mdl-layout__tab">Software</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="contact" style="padding-bottom: 48px;">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" style="max-width: 504px">
+            <header class="section__play-btn mdl-cell mdl-cell--4-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <img src="images/nvcleemp.jpg" width="168" height="240" border="0" alt="" style="padding:0px;">
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                Nico Van Cleemput<br>
+                Ghent University<br>
+                Department of applied mathematics, computer science and statistics<br>
+                Krijgslaan 281 - S9 - WE02<br>
+                B-9000 Gent<br>
+                Belgium<br>
+                <a href='mail&#116;o&#58;&#110;i&#99;o&#46;%&#55;6&#97;n%&#54;3%6C&#37;65%&#54;5m&#112;&#117;%&#55;4&#64;&#103;m&#97;&#105;&#108;&#46;c%6Fm'>nico&#46;vancleemput&#64;gma&#105;&#108;&#46;com</a>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" style="max-width: 640px">
+            <header class="section__play-btn mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <img src="images/valencia-cut.jpg" width="640" height="400" border="0" alt="" style="padding:0px;">
+            </header>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="cv">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+<h4>Studies</h4>
+<ul>
+    <li>2001 - 2006 : Master of Science in Mathematics, Ghent University, Belgium.</li>
+    <li>2007 - 2012 : PhD in Computer Science, Ghent University, Belgium</li>
+</ul>
+
+<h4>Work</h4>
+<ul>
+	<li>August 2006 - September 2007 : co-worker of <a href="http://www.grinvin.org" target="_new">GrInvIn</a>-project at Ghent University</li>
+	<li>October 2007 - September 2013: Research assistent at Ghent University</li>
+	<li>November 2013 - December 2014: Research Assistant (postdoc) at University of West Bohemia</li>
+	<li>September 2014 - present: Post-doctoral assistant at Ghent University</li>
+</ul>
+
+<h4>Teaching</h4>
+<p>I teach / have taught the following courses</p>
+<ul>
+  <li><b>Programming (I)</b> (Java) (exercises for the bachelors computer science, mathematics, physics and geography) (2007 - 2012) </li>
+  <li><b>Programming (II)</b> (Java) (exercises for the bachelors computer science) (2007 - 2013)</li>
+  <li><b>Computer science</b> (VBA and use of MS Office) (exercises for the bachelors biochemistry/biotechnology, chemistry, geology and geography) (2007 - 2011)</li>
+  <li><b>Programming</b> (Python) (exercises for the bachelors biochemistry/biotechnology, chemistry, geology and geography) (2011 - 2013)</li>
+  <li><b>Programming (I)</b> (Java) (exercises for the bachelors computer science, mathematics and physics) (2014 - 2015) </li>
+  <li><b>Analysis I</b> (for the bachelors computer science) (2015 - 2016)</li>
+  <li><b>Algorithms and Data-structures 2</b> (exercises for the bachelors computer science) (2015 - present) </li>
+  <li><b>Calculus</b> (for the bachelors computer science) (2017 - present)</li>
+  <li><b>Structure generation</b>: a four-part course on structure generation taught at University of West-Bohemia during 2014-2015.</li>
+</ul>
+
+<h4>Thesis students</h4>
+Students I supervised or co-supervised.
+<ul>
+<li>Pieter Goetschalckx (2014 - present)</li>
+<li>Thomas De Praetere, M.S. (2015 - 2016): <a href="http://lib.ugent.be/catalog/rug01:002272640" target="_blank">Drie-dimensionale symmetrische inbedding van grafen</a></li>
+<li>Karen Hilgert, M.S. (2016 - 2017)</li>
+</ul>
+Students for whom I assisted the thesis.
+<ul>
+<li>Simon Crevals, M.S. (2009 - 2010): <a href="http://lib.ugent.be/catalog/rug01:001458782" target="_blank">Communicatienetwerk voor het GPS III systeem</a></li>
+<li>Jasper Souffriau, M.S. (2012 - 2013): Hamiltoniaanse cykels in triangulaties</li>
+<li>Annelies Cuvelier, M.S. (2014 - 2015): <a href="http://lib.ugent.be/catalog/rug01:002213999" target="_blank">Grenzen voor het aantal Hamiltoniaanse cykels in triangulaties</a></li>
+</ul>
+
+<h4>Research interest</h4>
+<ul>
+<li>Generation of structures in chemistry and mathematics</li>
+<li>Combinatorial geometry</li>
+<li>Tilings</li>
+<li>Mathematical conjecturing</li>
+<li>Development of tools for graph theory</li>
+<li>General (graph) generation algorithms</li>
+<li>Graph theory</li>
+<li>Hamiltonicity and related properties</li>
+</ul>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="pub">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Publications</h4>
+              <ol reversed>
+                <li>K. Ozeki, N. Van Cleemput, C. Zamfirescu, <i>Hamiltonian properties in plane graphs with few 3-cuts - a survey</i>, submitted.</li>
+                <li>N. Van Cleemput, <i>Hamiltonian-connectedness of triangulations with few separating triangles</i>, submitted.</li>
+                <li>N. Van Cleemput, <i>Generation of Delaney-Dress graphs</i>, submitted.</li>
+                <li>G. Brinkmann, J. Souffriau, N. Van Cleemput, <i>On the number of hamiltonian cycles in triangulations with few separating triangles</i>, to appear in Journal of Graph Theory (<a href="http://dx.doi.org/10.1002/jgt.22149">DOI</a>).</li>
+                <li>C.E. Larson, N. Van Cleemput, <i>Automated Conjecturing III: Property-relations conjectures</i>, Annals of Mathematics and Artificial Intelligence, <b>81</b> (3), 2017, pp. 315-327 (<a href="http://dx.doi.org/10.1007/s10472-017-9559-5">DOI</a>).</li>
+                <li>N. Bašić, G. Brinkmann, P.W. Fowler, T. Pisanski, N. Van Cleemput, <i>Sizes of Pentagonal Clusters in Fullerenes</i>, Journal of Mathematical Chemistry <b>55</b> (8), 2017, pp. 1669-1682 (<a href="http://dx.doi.org/10.1007/s10910-017-0754-8">DOI</a>).</li>
+                <li>G. Brinkmann, J. Souffriau, N. Van Cleemput, <i>On the strongest form of a theorem of Whitney for hamiltonian cycles in plane triangulations</i>, Journal of Graph Theory <b>83</b> (1), 2016, pp. 78-91 (<a href="http://dx.doi.org/10.1002/jgt.21915">DOI</a>).</li>
+                <li>C.E. Larson, N. Van Cleemput, <i>Automated Conjecturing I: Fajtlowicz's Dalmatian Heuristic Revisited</i>, Artificial Intelligence <b>231</b>, 2016, pp. 17-38.</li>
+                <li>T. Kaiser, M. Saumell, N. Van Cleemput, <i>10-Gabriel graphs are Hamiltonian</i>, Information Processing Letters <b>115</b>, 2015, pp. 877-881 (<a href="http://dx.doi.org/10.1016/j.ipl.2015.05.013">DOI</a>).</li>
+                <li>G. Brinkmann, C.E. Larson, J. Souffriau, N. Van Cleemput, <i>Construction of planar 4-connected triangulations</i>, Ars Mathematica Contemporanea <b>9</b> (2), 2015, pp. 145-159 (<a href="http://amc-journal.eu/index.php/amc/article/view/459">link</a>).</li>
+                <li>I. Alth&ouml;fer, J.K. Haugland, K. Scherer, F. Schneider, N. Van Cleemput, <i>Alternating Plane Graphs</i>, Ars Mathematica Contemporanea <b>8</b> (2), 2015, pp. 337-363 (<a href="http://amc-journal.eu/index.php/amc/article/view/584">link</a>).</li>
+                <li>Y. Akama, N. Van Cleemput, <i>Spherical tilings by congruent quadrangles: Forbidden cases and substructures</i>, Ars Mathematica Contemporanea <b>8</b> (2), 2015, pp. 297-318 (<a href="http://amc-journal.eu/index.php/amc/article/view/581">link</a>).</li>
+                <li>G. Brinkmann, J. Goedgebeur, N. Van Cleemput, <i>The history of the generation of cubic graphs</i>, International Journal of Chemical Modeling, 5(2-3), 2013, pp. 67-89.</li>
+                <li>C.E. Larson, N. Van Cleemput, <i>Forcing independence</i>, Croat. Chem. Acta <b>86</b> (4), 2013, pp. 469-475 (<a href="http://dx.doi.org/10.5562/cca2295">DOI</a>), <a href="http://public.carnet.hr/ccacaa/prev.html">(link)</a> or <a href="http://hrcak.srce.hr/index.php?show=clanak&amp;id_clanak_jezik=166555">(direct link)</a></li>
+                <li>G. Brinkmann, N. Van Cleemput, T.Pisanski, <i>Generation of various classes of trivalent graphs</i>, Theoretical Computer Science <b>502</b>, 2013, pp. 16-29 (<a href="http://dx.doi.org/10.1016/j.tcs.2012.01.018">DOI</a>).</li>
+                <li>G. Brinkmann, N. Van Cleemput, <i>Classification and Generation of Nanocones</i>, Discrete Applied Mathematics <b>159</b> (15), 2011, pp. 1528-1539.</li>
+                <li>G. Brinkmann, O. Delgado Friedrichs, S. Lisken, A. Peeters, N. Van Cleemput, <i>CaGe - a Virtual Environment for Studying Some Special Classes of Plane Graphs - an Update</i>, MATCH Commun. Math. Comput. Chem., <b>63</b>(3), 2010, pp. 533-552 (<a href="http://match.pmf.kg.ac.rs/electronic_versions/Match63/n3/match63n3_533-552.pdf">link</a>).</li>
+	        <li>G. Brinkmann, O. Delgado-Friedrichs, E.C. Kirby, N. Van Cleemput, <i>A Catalogue of Periodic Fully-Resonant Azulene-Transitive Azulenoid Tilings Analogous to Clar Structures</i>, Croat. Chem. Acta <b>82</b> (4), 2009, pp. 781-789 <a href="http://public.carnet.hr/ccacaa/prev.html">(link)</a> or <a href="http://hrcak.srce.hr/index.php?show=clanak&amp;id_clanak_jezik=70551">(direct link)</a></li>
+	        <li>A. Peeters, K. Coolsaet, G. Brinkmann, N. Van Cleemput, V. Fack, <i>GrInvIn in a Nutshell</i>, Journal of Mathematical Chemistry <b>45</b>, 2009, pp. 471-477 (<a href="http://dx.doi.org/10.1007/s10910-008-9420-5">DOI</a>)</li>
+</ol>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" style="max-width: 588px; margin-bottom: 48px">
+            <header class="section__play-btn mdl-cell mdl-cell--5-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <img src="images/thesis.png" width="245" height="340" border="0" alt="" style="padding:0px;">
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--7-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>PhD dissertation</h4>
+                On 21 September 2012 I defended my PhD with the title "Generation of structures in chemistry and mathematics". You can find the dissertation on the website of Ghent University at <a href="http://hdl.handle.net/1854/LU-3052922">this link</a>.
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="conf">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Talks</h4>
+              <ul>
+                <li>Educational innovation day of Ghent University (Ghent, Belgium, 10/05/2007) (Dutch): <a href="docs/abstracts/oid.html" target="_blank">Abstract</a>/<a href="docs/slides/oid.pdf" target="_blank">Slides</a></li>
+	<li>6th Cologne-Twente Workshop on Graphs and Combinatorial Optimization (Enschede, Netherlands, 29-31/05/2007): Plenary talk with Gunnar Brinkmann: <a href="docs/abstracts/twente.pdf" target="_blank">Abstract</a>/<a href="docs/slides/twente.pdf" target="_blank">Slides</a></li>
+	<li>MATH / CHEM / COMP (Verbania, Italy, 10-13/06/2008): Toroidal Azulenoids: <a href="docs/abstracts/mcc08.pdf" target="_blank">Abstract</a>/<a href="docs/slides/mcc08.pdf" target="_blank">Slides</a></li>
+	<li>(Informal) Workshop on Structural and Computational Graph Theory (Ghent, Belgium, 20/06/2008): Toroidal Azulenoids: <a href="docs/abstracts/workshop08.pdf" target="_blank">Abstract</a>/<a href="docs/slides/workshop08.pdf" target="_blank">Slides</a></li>
+	<li>Colloquium on Combinatorics (Magdeburg, Germany, 13-14/11/2008): Toroidal Azulenoids: <a href="docs/abstracts/kolkom08.pdf" target="_blank">Abstract</a>/<a href="docs/slides/kolkom08.pdf" target="_blank">Slides</a></li>
+	<li>8th Cologne-Twente Workshop on Graphs and Combinatorial Optimization (Paris, France, 02-04/06/2009): Nanocones: A classification result in chemistry: <a href="docs/abstracts/ctw09.pdf" target="_blank">Abstract</a>/<a href="docs/slides/ctw09.pdf" target="_blank">Slides</a></li>
+	<li>MATH / CHEM / COMP (Dubrovnik, Croatia, 08-13/06/2009): Nanocones: A classification result in chemistry: <a href="docs/abstracts/mcc09.pdf" target="_blank">Abstract</a>/<a href="docs/slides/mcc09.pdf" target="_blank">Slides</a></li>
+	<li>Colloquium on Combinatorics (Magdeburg, Germany, 13-14/11/2009): Nanocones: A classification result in chemistry: <a href="docs/abstracts/kolkom09.pdf" target="_blank">Abstract</a>/<a href="docs/slides/kolkom09.pdf" target="_blank">Slides</a></li>
+	<li>MATH / CHEM / COMP (Dubrovnik, Croatia, 07-12/06/2010): CaGe: A virtual environment for studying some special classes of plane graphs: <a href="docs/abstracts/mcc10.pdf" target="_blank">Abstract</a>/<a href="docs/slides/mcc10.pdf" target="_blank">Slides</a></li>
+	<li>8th French Combinatorial Conference (Orsay, France, 28/06/2010 - 02/07/2010): Generation of generalized 3-regular graphs: <a href="docs/abstracts/8fcc.pdf" target="_blank">Abstract</a>/<a href="docs/slides/8fcc.pdf" target="_blank">Slides</a></li>
+	<li>Computers in Scientific Discovery 5 (Sheffield, UK, 20-23/07/2010): Generation of generalized 3-regular graphs: <a href="docs/abstracts/csd5.html" target="_blank">Abstract</a>/<a href="docs/slides/csd5.pdf" target="_blank">Slides</a></li>
+	<li>Colloquium on Combinatorics (Saarbr&uuml;cken, Germany, 11-13/11/2010): Generation of generalized 3-regular graphs: <a href="docs/abstracts/kolkom10.html" target="_blank">Abstract</a>/<a href="docs/slides/kolkom10.pdf" target="_blank">Slides</a></li>
+	<li>CanaDAM (Victoria, Canada, 31/05/2011-03/06/2011): CaGe: A virtual environment for studying some special classes of plane graphs: <a href="docs/abstracts/canadam11.pdf" target="_blank">Abstract</a>/<a href="docs/slides/canadam11.pdf" target="_blank">Slides</a></li>
+	<li>Informal mini-workshop (Ghent, Belgium, 08/09/2011): Generation of Delaney-Dress symbols: <a href="docs/slides/workshop2011.pdf" target="_blank">Slides</a></li>
+	<li>Colloquium on Combinatorics (Magdeburg, Germany, 11-12/11/2011): Generation of Delaney-Dress symbols: <a href="docs/abstracts/kolkom11.pdf" target="_blank">Abstract</a>/<a href="docs/slides/kolkom11.pdf" target="_blank">Slides</a></li>
+	<li>ICCAM 2012 - International Congress on Computational and Applied Mathematics (Ghent, Belgium, 09-13/07/2012): Nanocones: A classification result in chemistry: <a href="docs/abstracts/iccam2012.pdf" target="_blank">Abstract</a>/<a href="docs/slides/iccam2012.pdf" target="_blank">Slides</a></li>
+	<li>Computers in Scientific Discovery 6 (Portoroz, Slovenia, 21-25/08/2012): Generation of Delaney-Dress symbols: <a href="docs/abstracts/csd6.html" target="_blank">Abstract</a>/<a href="docs/slides/csd6.pdf" target="_blank">Slides</a></li>
+	<li>Informal workshop (Ghent, Belgium, 30-31/08/2012): Spherical tilings by congruent quadrangles (black board presentation)</li>
+	<li>PhD defense (Ghent, Belgium, 21/09/2012): <a href="docs/slides/public-defense.pdf">Slides</a></li>
+	<li>Colloquium on Combinatorics (Berlin, Germany, 16-17/11/2012): Spherical tilings by congruent quadrangles: <a href="docs/abstracts/kolkom12.pdf" target="_blank">Abstract</a>/<a href="docs/slides/kolkom12.pdf" target="_blank">Slides</a></li>
+	<li>CanaDAM (St.-John's, Canada, 10/06/2013-13/06/2013): Spherical tilings by congruent quadrangles: <a href="docs/abstracts/canadam13.pdf" target="_blank">Abstract</a>/<a href="docs/slides/canadam13.pdf" target="_blank">Slides</a></li>
+	<li>GraphDay@ULB (Brussels, Belgium, 02/10/2013): Hamiltonian cycles in triangulations: <a href="docs/abstracts/graphdayULB13.pdf" target="_blank">Abstract</a>/<a href="docs/slides/graphdayULB13.pdf" target="_blank">Slides</a></li>
+	<li>Graph theory seminar (Pilsen, Czech Republic, 19/11/2013): Hamiltonian cycles in triangulations: <a href="docs/slides/seminar20131119.pdf" target="_blank">Slides</a></li>
+	<li>Graph theory seminar (Pilsen, Czech Republic, 25/02/2014): Structure generation: <a href="docs/slides/seminar20140225.pdf" target="_blank">Slides</a></li>
+	<li>ICGT 2014 (Grenoble, France, 30/06/2014 - 04/07/2014): On the strongest form of a theorem of Whitney for hamiltonian cycles in plane triangulations: <a href="docs/slides/icgt2014.pdf" target="_blank">Slides</a></li>
+    <li>VCU Discrete Mathematics Seminar (Richmond, USA, 02/09/2014): On the strongest form of a theorem of Whitney for hamiltonian cycles in plane triangulations: <a href="docs/abstracts/VCU_20140902.pdf" target="_blank">Abstract</a>/<a href="docs/slides/VCU_20140902.pdf" target="_blank">Slides</a>/<a href="docs/slides/VCU_20140902_handouts.pdf" target="_blank">Handouts</a></li>
+    <li>VCU Discrete Mathematics Seminar (Richmond, USA, 09/09/2014): Structure generation - a case study: <a href="docs/abstracts/VCU_20140909.pdf" target="_blank">Abstract</a>/<a href="docs/slides/VCU_20140909.pdf" target="_blank">Slides</a>/<a href="docs/slides/VCU_20140909_handouts.pdf" target="_blank">Handouts</a></li>
+    <li>CAAGT seminar (Ghent, Belgium, 08/12/2014): Conway's Thrackle Conjecture (black board talk)</li>
+    <li>CAAGT seminar (Ghent, Belgium, 27/03/2015, 03/04/2015, 17/04/2015): Generation of Delaney-Dress symbols (black board talk in three parts)</li>
+    <li>Computers in Scientific Discovery 7 (Richmond, USA, 19-23/07/2015): Classification and generation of nanocones (invited talk): <a href="docs/slides/csd7.pdf" target="_blank">Slides</a></li>
+    <li>Cycles and Colourings 2015 (Novy Smokovec, Slovakia, 07-11/09/2015): On the number of hamiltonian cycles in triangulations with few separating triangles: <a href="docs/slides/CandC2015.pdf" target="_blank">Slides</a></li>
+	<li>Colloquium on Combinatorics (Ilmenau, Germany, 6-7/11/2015): On the strongest form of a theorem of Whitney for hamiltonian cycles in plane triangulations: <a href="docs/abstracts/kolkom15.pdf" target="_blank">Abstract</a>/<a href="docs/slides/kolkom15.pdf" target="_blank">Slides</a>/<a href="docs/slides/kolkom15_handouts.pdf" target="_blank">Handouts</a></li>
+    <li>VCU Discrete Mathematics Seminar (Richmond, USA, 05/04/2016): On the number of hamiltonian cycles in triangulations with few separating triangles: <a href="docs/abstracts/VCU_20160405.pdf" target="_blank">Abstract</a>/<a href="docs/slides/VCU_20160405.pdf" target="_blank">Slides</a>/<a href="docs/slides/VCU_20160405_handouts.pdf" target="_blank">Handouts</a></li>
+    <li>Ghent Graph Theory Workshop on Longest Paths and Longest Cycles (Ghent, Belgium, 1-2/08/2016): Connections between decomposition trees of 3-connected plane triangulations and hamiltonian properties (invited talk): <a href="docs/slides/LPLC2016.pdf" target="_blank">Slides</a>/<a href="docs/slides/LPLC2016_handouts.pdf" target="_blank">Handouts</a></li>
+    <li>Colloquium on Combinatorics (Paderborn, Germany, 4-5/11/2016): On the number of hamiltonian cycles in triangulations with few separating triangles: <a href="docs/abstracts/kolkom16.pdf" target="_blank">Abstract</a>/<a href="docs/slides/kolkom16.pdf" target="_blank">Slides</a>/<a href="docs/slides/kolkom16_handouts.pdf" target="_blank">Handouts</a></li>
+    <li>CAAGT seminar (Ghent, Belgium, 28/04/2017): Type-0 triangles: <a href="docs/slides/caagt20170428.pdf" target="_blank">Slides</a>/<a href="docs/slides/caagt20170428_handouts.pdf" target="_blank">Handouts</a></li>
+    <li>Computers in Scientific Discovery 8 (Mons, Belgium, 23-25/08/2017): Non-hamiltonian and non-traceable regular 3-connected planar graphs: <a href="docs/abstracts/CSD8.pdf" target="_blank">Abstract</a>/<a href="docs/slides/CSD8.pdf" target="_blank">Slides</a>/<a href="docs/slides/CSD8_handouts.pdf" target="_blank">Handouts</a></li>
+</ul>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Posters</h4>
+              <ul>
+                <li>Educational innovation day of Ghent University (10/05/2007) (Dutch): <a href="docs/posters/grinvin_dutch.pdf" target="_blank">Poster</a></li>
+                <li>9th PhD Symposium FirW (04/12/2008): <a href="docs/abstracts/firwsymposium.pdf" target="_blank">Abstract</a>/<a href="docs/posters/cones.pdf" target="_blank">Poster</a></li>
+                <li>Educational innovation day of Ghent University (16/11/2009) (Dutch): <a href="docs/posters/grinvin_dutch.pdf" target="_blank">Poster</a></li>
+              </ul>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Attended conferences</h4>
+              Only the conferences where I did not give a presentation
+              <ul>
+                <li>JavaPolis 2007 (Antwerp, Belgium, 12-14/12/2007)</li>
+                <li>Devoxx 2008 (Antwerp, Belgium, 10-12/12/2008)</li>
+                <li>FOSDEM 2009 (Brussels, Belgium, 7-8/02/2009)</li>
+                <li>5th meeting of the IAMC (Dubrovnik, Croatia, 13-16/06/2009)</li>
+                <li>Devoxx 2009 (Antwerp, Belgium, 18-20/11/2009)</li>
+                <li>FOSDEM 2010 (Brussels, Belgium, 6-7/02/2010)</li>
+                <li>6th meeting of the IAMC (Dubrovnik, Croatia, 5-6/06/2010)</li>
+                <li>FOSDEM 2011 (Brussels, Belgium, 5-6/02/2011)</li>
+                <li>FOSDEM 2012 (Brussels, Belgium, 4-5/02/2012)</li>
+                <li>FOSDEM 2013 (Brussels, Belgium, 2-3/02/2013)</li>
+                <li>GraphDay@Mons (Mons, Belgium, 5/03/2013)</li>
+                <li>Winter school on Algorithm Design (Beroun, Czech Republic, 12/12/2013 - 15/12/2013)</li>
+                <li>Mathematics in Chemistry meeting (Leipzig, Germany, 26/10/2016 - 28/10/2016)</li>
+                <li>9th Workshop on the Matthews-Sumner Conjecture and related Problems (Pilsen, Czech Republic, 09/04/2017 - 14/04/2017)</li>
+              </ul>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Organised conferences</h4>
+              <ul>
+                <li><a href="http://www.ggtw.ugent.be" target="_new">Ghent Graph Theory Workshop on Structure and Algorithms 2017</a> (Ghent, Belgium, 16/08/2017 - 18/08/2017)</li>
+              </ul>
+            </div>
+        <div class="mdl-cell mdl-cell--12-col">
+          <h4>Research visits</h4>
+          <ul>
+              <li>visit to VCU to work with Craig Larson (Richmond, VA, United States, 22/08/2014 - 15/09/2014)</li>
+              <li>visit to UCLA to work with Stan Schein (Los Angeles, CA, United States, 23/01/2016 - 05/02/2016)</li>
+              <li>visit to VCU to work with Craig Larson (Richmond, VA, United States, 25/03/2016 - 15/03/2016)</li>
+              <li>visit to UCLA to work with Stan Schein (Los Angeles, CA, United States, 19/01/2017 - 27/01/2017)</li>
+          </ul>
+        </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="software">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Software</h4>
+              Software in which I played a significant role.
+              <div class="mdl-grid">
+                <div class="card-software mdl-card mdl-shadow--2dp mdl-card--border mdl-cell mdl-cell--3-col" style="background: url('images/cage.png') center / cover">
+                  <div class="mdl-card__title mdl-card--expand"></div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="https://caagt.ugent.be/CaGe" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-software__name" target="_blank">CaGe</a>
+                  </div>
+                </div>
+                <div class="card-software mdl-card mdl-shadow--2dp mdl-card--border mdl-cell mdl-cell--3-col" style="background: url('images/wright.jpg') center / cover">
+                  <div class="mdl-card__title mdl-card--expand"></div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="https://nvcleemp.github.io/conjecturing" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-software__name" target="_blank">CONJECTURING</a>
+                  </div>
+                </div>
+                <div class="card-software mdl-card mdl-shadow--2dp mdl-card--border mdl-cell mdl-cell--3-col" style="background: url('images/grinvin.png') center / cover">
+                  <div class="mdl-card__title mdl-card--expand"></div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="http://www.grinvin.org" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-software__name" target="_blank">Grinvin</a>
+                  </div>
+                </div>
+                <div class="card-software mdl-card mdl-shadow--2dp mdl-card--border mdl-cell mdl-cell--3-col" style="background: url('images/azul.png') center / cover">
+                  <div class="mdl-card__title mdl-card--expand"></div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="https://caagt.ugent.be/azul" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-software__name" target="_blank">azul</a>
+                  </div>
+                </div>
+                <div class="card-software mdl-card mdl-shadow--2dp mdl-card--border mdl-cell mdl-cell--3-col" style="background: url('images/cone.png') center / cover">
+                  <div class="mdl-card__title mdl-card--expand"></div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="https://github.com/nvcleemp/pseudoconvex" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-software__name" target="_blank">cone</a>
+                  </div>
+                </div>
+                <div class="card-software mdl-card mdl-shadow--2dp mdl-card--border mdl-cell mdl-cell--3-col" style="background: url('images/pregraphs.png') center / cover">
+                  <div class="mdl-card__title mdl-card--expand"></div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="https://caagt.ugent.be/pregraphs" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-software__name" target="_blank">pregraphs</a>
+                  </div>
+                </div>
+              </div>
+              To be completed...
+              <h4>Contributions</h4>
+              Software to which I made smaller contributions.<br>
+              To be completed...
+            </div>
+          </section>
+        </div>
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">nvcleemp - !!!!!</div>
+    <!--<ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>-->
+  </div>
+</footer>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  </body>
+</html>
